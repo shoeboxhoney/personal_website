@@ -324,3 +324,58 @@ text-align: center;
     transform: scale(1.05);
   }
 
+/* responsiveness, adjusting to phone screens */
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        text-align: center; /* Center text for better alignment */
+    }
+
+    #headshot {
+        max-width: 150px; /* Adjust image size for smaller screens */
+        margin-bottom: 15px; /* Add spacing below the image */
+    }
+
+    #description {
+        text-align: center; /* Center-align text */
+    }
+
+    .typingeffect {
+        font-size: 1rem; /* Reduce font size for small screens */
+    }
+
+    .project-container {
+        flex-direction: column; /* Stack projects vertically */
+        align-items: center; /* Center items */
+    }
+
+    .project {
+        flex: 1 1 100%; /* Each project takes full width */
+        max-width: 90%; /* Optional: Add padding around the projects */
+    }
+
+    .project img {
+        max-width: 100%; /* Ensure images resize properly */
+        height: auto;
+    }
+
+    #button1 {
+        font-size: 0.5rem;
+    }
+
+    #myBtn {
+        font-size: 0.5rem;
+    }
+
+    #skills p {
+        font-size: 0.8rem;
+    }
+
+    #skills h3 {
+        font-size: 1rem;
+    }
+}
+
+
