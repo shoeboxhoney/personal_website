@@ -45,8 +45,8 @@ h3 {
 
 /* Text styles */
 #description {
-    padding-top: 3%;
-    max-width: 60%; /* Restrict text width to 50% of the container */
+    padding-top: 4%;
+    max-width: 70%; /* Restrict text width to 70% of the container */
     font-size: 1.5rem; /* Headline font size */
     margin-bottom: 10px;
     padding-left: 2%;
@@ -342,6 +342,7 @@ text-align: center;
     #description {
         text-align: center; /* Center-align text */
         font-size: 1rem;
+        padding-top: 5%;
     }
 
     .typingeffect {
