@@ -24,14 +24,15 @@ h3 {
     padding-top: 3%;
 }
 
-
+.typingeffect {
+    max-width: 2000px;
+}
 .about-container {
     display: flex; 
     justify-content:space-between;
-    
     max-width: 1200px; /* Optional: Limit the content width */
     margin: 0 auto; /* Center the container */
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -45,7 +46,7 @@ h3 {
 /* Text styles */
 #description {
     padding-top: 3%;
-    max-width: 50%; /* Restrict text width to 50% of the container */
+    max-width: 60%; /* Restrict text width to 50% of the container */
     font-size: 1.5rem; /* Headline font size */
     margin-bottom: 10px;
     padding-left: 2%;
@@ -340,10 +341,12 @@ text-align: center;
 
     #description {
         text-align: center; /* Center-align text */
+        font-size: 1rem;
     }
 
     .typingeffect {
         font-size: 1rem; /* Reduce font size for small screens */
+
     }
 
     .project-container {
@@ -377,5 +380,3 @@ text-align: center;
         font-size: 1rem;
     }
 }
-
-
