@@ -1,384 +1,398 @@
+/* General body styling: sets background color and primary font */
 body {
-    background-color:white;
-    font-family: 'Tinos';
-
+    background-color:white; /* Sets the background color to white */
+    font-family: 'Tinos'; /* Sets the primary font family */
 }
   
+/* H2 heading styling: large, centered red text */
 h2 {
-    font-family: 'Tinos';
-    position: relative;
-    align-items: center;
-    text-align: center;
-    color: rgb(216, 31, 31);
-    font-size: 3rem;
+    font-family: 'Tinos'; /* Matches body font for consistency */
+    position: relative; /* Enables positioning for any children */
+    align-items: center; /* Centers items vertically */
+    text-align: center; /* Centers text horizontally */
+    color: rgb(216, 31, 31); /* Sets text color to red */
+    font-size: 3rem; /* Large font size */
 }
 
+/* H3 heading styling: styled for subheadings with Special Elite font */
 h3 {
-    font-family: 'Special Elite';
-    position: relative;
-    font-size: 2rem;
-    text-align: center;
-    font-weight: bold;
-    color: rgb(216, 31, 31);
-    margin: 10px;
-    padding-top: 3%;
+    font-family: 'Special Elite'; /* Different font for contrast */
+    position: relative; /* Enables positioning for children if needed */
+    font-size: 2rem; /* Sets font size for subheadings */
+    text-align: center; /* Centers text horizontally */
+    font-weight: bold; /* Emphasizes text with bold weight */
+    color: rgb(216, 31, 31); /* Red text color for emphasis */
+    margin: 10px; /* Adds space around elements */
+    padding-top: 3%; /* Adds space at the top */
 }
 
+/* Typing effect container: restricts width */
 .typingeffect {
-    max-width: 2000px;
+    max-width: 2000px; /* Limits maximum width of the effect */
 }
+
+/* About container: flexible layout for image and text */
 .about-container {
-    display: flex; 
-    justify-content:space-between;
-    max-width: 1200px; /* Optional: Limit the content width */
-    margin: 0 auto; /* Center the container */
-    padding: 10px;
-    text-align: center;
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content:space-between; /* Distributes space evenly */
+    max-width: 1200px; /* Limits content width for readability */
+    margin: 0 auto; /* Centers the container on the page */
+    padding: 10px; /* Adds spacing inside the container */
+    text-align: center; /* Centers text */
 }
 
+/* Styling for headshot image */
 #headshot {
-    max-width: 30%;
-    height: auto;
-    box-shadow: 20px 20px rgb(216, 31, 31);
-    border-radius: 10px;
+    max-width: 30%; /* Limits the image width to 30% of the container */
+    height: auto; /* Maintains aspect ratio */
+    box-shadow: 20px 20px rgb(216, 31, 31); /* Adds a red shadow */
+    border-radius: 10px; /* Rounds the image corners */
 }
 
-/* Text styles */
+/* Description text styling */
 #description {
-    padding-top: 4%;
-    max-width: 70%; /* Restrict text width to 70% of the container */
-    font-size: 1.5rem; /* Headline font size */
-    margin-bottom: 10px;
-    padding-left: 2%;
-    text-align: center;
-    vertical-align: middle;
+    padding-top: 4%; /* Adds space above text */
+    max-width: 70%; /* Limits the width of the text area */
+    font-size: 1.5rem; /* Sets font size */
+    margin-bottom: 10px; /* Adds space below the text */
+    padding-left: 2%; /* Adds spacing on the left */
+    text-align: center; /* Centers text horizontally */
+    vertical-align: middle; /* Aligns vertically */
 }
 
+/* H1 heading with a typewriter effect */
 h1 {
-    color: rgb(216, 31, 31);
-    font-family: 'Tinos';
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid rgb(216, 31, 31); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    color: rgb(216, 31, 31); /* Red text color */
+    font-family: 'Tinos'; /* Matches body font */
+    overflow: hidden; /* Hides content until typed */
+    border-right: .15em solid rgb(216, 31, 31); /* Simulates a blinking cursor */
+    white-space: nowrap; /* Keeps text on one line */
+    margin: 0 auto; /* Centers text */
+    letter-spacing: .15em; /* Adjusts spacing between letters */
     animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
+      typing 3.5s steps(40, end), /* Typing animation */
+      blink-caret .75s step-end infinite; /* Cursor blinking */
 }
 
-/* The typing effect */
+/* Keyframes for typing effect */
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from { width: 0 } /* Starts with no width (hidden) */
+    to { width: 100% } /* Expands to full width */
 }
 
-  
-  /* The typewriter cursor effect */
+/* Keyframes for blinking cursor effect */
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(216, 31, 31); }
+    from, to { border-color: transparent } /* Cursor invisible */
+    50% { border-color: rgb(216, 31, 31); } /* Cursor visible at 50% */
 }
 
-
+/* Footer styling */
 #footer {
-    text-align: center;
-    height: 30%;
-    width: auto;
-    padding: 50px 0 50px 0;
+    text-align: center; /* Centers text */
+    height: 30%; /* Sets height */
+    width: auto; /* Flexible width */
+    padding: 50px 0 50px 0; /* Adds spacing inside the footer */
 }
 
+/* Styling for links in the footer */
 .links {
-    width: 50px;
-    height: auto;
-    margin-right: 15px;
-    transition: transform 0.3s ease;
+    width: 50px; /* Sets width for icons or images */
+    height: auto; /* Maintains aspect ratio */
+    margin-right: 15px; /* Adds space between links */
+    transition: transform 0.3s ease; /* Smooth scaling animation */
 }
 
+/* Hover effect for footer links */
 .links:hover { 
-    transform: scale(1.2); /* Scale up on hover */ 
+    transform: scale(1.2); /* Enlarges links on hover */ 
 }
 
+/* Menu styling: centers fixed menu */
 menu {
-font-family: 'Tinos';
-position: fixed;
-justify-content: center;
-text-align: center;
+    font-family: 'Tinos'; /* Matches body font */
+    position: fixed; /* Sticks to a fixed position */
+    justify-content: center; /* Centers menu items */
+    text-align: center; /* Centers text horizontally */
 }
 
+/* Styling for buttons */
 #button1 {
-    font-family: 'Tinos';
-    background: rgb(216, 31, 31);
-    text-align: center;
-    color: whitesmoke;
-    font-size: 1rem;
-    font-family: 'Roboto';
-    position: relative;
-    left: 5%;
-    margin: 3%;
-    width: 17%;
-    border: 0;
-    border-radius: 999px;
-    line-height: 2rem;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    padding: 0.5%;
+    font-family: 'Roboto'; /* Sets a different font for buttons */
+    background: rgb(216, 31, 31); /* Red background */
+    text-align: center; /* Centers text */
+    color: whitesmoke; /* Light text color */
+    font-size: 1rem; /* Sets font size */
+    position: relative; /* Enables relative positioning */
+    left: 5%; /* Moves button slightly to the left */
+    margin: 3%; /* Adds spacing around the button */
+    width: 17%; /* Sets button width */
+    border: 0; /* Removes border */
+    border-radius: 999px; /* Rounds button edges */
+    line-height: 2rem; /* Adjusts vertical alignment */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: transform 0.3s ease; /* Smooth hover animation */
+    padding: 0.5%; /* Adds padding inside the button */
 }
 
+/* Hover effect for buttons */
 #button1:hover {
-    background: rgb(92, 2, 2);;
-    transform: scale(1.2); /* Scale up on hover */ 
+    background: rgb(92, 2, 2); /* Darker red on hover */
+    transform: scale(1.2); /* Enlarges button slightly */
 }
 
+/* About section ID: centers text */
 #aboutSamira {
-    position: relative;
-    text-align: center;
+    position: relative; /* Enables relative positioning */
+    text-align: center; /* Centers text */
 }
 
-#projects {
-    position: relative;
-    text-align: center;
+/* Similar styling for projects and contact sections */
+#projects, #contact {
+    position: relative; /* Enables relative positioning */
+    text-align: center; /* Centers text */
 }
 
-#contact {
-    position: relative;
-    text-align: center;
-}
-
-/* Flexbox styles for the team members */
+/* Flexbox for project containers */
 .project-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    flex-wrap: nowrap;
-    overflow: hidden;
+    display: flex; /* Horizontal layout */
+    justify-content: space-around; /* Space between projects */
+    align-items: center; /* Aligns items vertically */
+    padding: 20px; /* Adds padding inside */
+    flex-wrap: nowrap; /* Prevents wrapping */
+    overflow: hidden; /* Hides overflow */
 }
 
+/* Individual project styling */
 .project {
-    position: relative;
-    flex: 1;
-    margin: 10px;
-    max-width: 500px; /* Limit the width */
+    position: relative; /* Enables relative positioning */
+    flex: 1; /* Each project takes up equal space */
+    margin: 10px; /* Adds space between projects */
+    max-width: 500px; /* Limits project width */
 }
 
+/* Polaroid-style project container */
 .polaroid {
-    background-color: #bc1212;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 350px; /* Fixed height to ensure uniformity */
+    background-color: #bc1212; /* Sets red background */
+    padding: 15px; /* Adds padding inside */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
+    text-align: center; /* Centers text */
+    border-radius: 10px; /* Rounds corners */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: flex-end; /* Aligns content at the bottom */
+    height: 350px; /* Sets fixed height */
 }
 
+/* Image styling within polaroid */
 .polaroid img {
-    width: 100%;
-    height: 80%; /* Adjusts the image height within the polaroid */
-    object-fit: cover; /* Ensures the image fits properly inside the box */
-    border-radius: 5px;
+    width: 100%; /* Full width */
+    height: 80%; /* Occupies 80% height */
+    object-fit: cover; /* Ensures image fits nicely */
+    border-radius: 5px; /* Rounds image corners */
 }
 
+/* Caption styling */
 .caption {
-    margin-top: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    color: whitesmoke;
-    padding: 5px;
+    margin-top: 5px; /* Space above text */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    color: whitesmoke; /* Light text color */
+    padding: 5px; /* Adds padding around text */
 }
 
-/* Hover effect for the overlay description */
+/* Overlay effect for project descriptions */
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    border-radius: 10px;
-    transition: opacity 0.3s ease;
+    position: absolute; /* Covers the parent container */
+    top: 0; /* Starts at the top */
+    left: 0; /* Starts at the left */
+    right: 0; /* Ends at the right */
+    bottom: 0; /* Ends at the bottom */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: whitesmoke; /* Light text color */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Centers text */
+    align-items: center; /* Centers text vertically */
+    opacity: 0; /* Hidden by default */
+    border-radius: 10px; /* Rounds corners */
+    transition: opacity 0.3s ease; /* Smooth fade-in animation */
 }
 
+/* Show overlay on hover */
 .project:hover .overlay {
-    opacity: 1;
+    opacity: 1; /* Makes overlay visible */
 }
 
+/* Text inside overlay */
 .overlay p {
-    padding: 10px;
-    text-align: center;
-    font-size: 14px;
+    padding: 10px; /* Adds padding inside */
+    text-align: center; /* Centers text */
+    font-size: 14px; /* Adjust font size */
 }
 
+/* PCB section styling */
 .PCB {
-    display: flex; 
-    justify-content:center;
-    max-width: 1200px; /* Optional: Limit the content width */
-    margin: 0 auto; /* Center the container */
-    padding: 10px;
-    align-items: center;
+    display: flex; /* Horizontal layout */
+    justify-content:center; /* Centers items */
+    max-width: 1200px; /* Limits content width */
+    margin: 0 auto; /* Centers the container */
+    padding: 10px; /* Adds padding inside */
+    align-items: center; /* Aligns items vertically */
 }
 
+/* Oscilloscope image styling */
 #osciloscope {
-    max-width: 45%;
-    height: auto;
-    border-radius: 10px;
-    border-width: 1px black;
+    max-width: 45%; /* Limits width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Rounds corners */
+    border-width: 1px black; /* Adds border */
 }
 
+/* Similar styling for thermal imagery */
 #thermalimagery {
-    max-width: 45%;
-    height: auto;
-    border-radius: 10px;
-    border-width: 1px black;
-    box-shadow: 20px 20px rgb(216, 31, 31);
+    max-width: 45%; /* Limits width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Rounds corners */
+    border-width: 1px black; /* Adds border */
+    box-shadow: 20px 20px rgb(216, 31, 31); /* Adds shadow */
 }
 
+/* PCB description styling */
 #description_pcb {
-    max-width: 50%; /* Restrict text width to 50% of the container */
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    padding-left: 2%;
-    text-align: center;
+    max-width: 50%; /* Limits width */
+    font-size: 1.5rem; /* Sets font size */
+    margin-bottom: 10px; /* Adds space below */
+    padding-left: 2%; /* Adds padding */
+    text-align: center; /* Centers text */
 }
 
+/* Teaching section styling */
 .teaching {
-    display: flex; 
-    justify-content:center;
-    max-width: 1200px; /* Optional: Limit the content width */
-    margin: 0 auto; /* Center the container */
-    padding: 10px;
-    align-items: center;
+    display: flex; /* Horizontal layout */
+    justify-content:center; /* Centers items */
+    max-width: 1200px; /* Limits content width */
+    margin: 0 auto; /* Centers the container */
+    padding: 10px; /* Adds padding inside */
+    align-items: center; /* Aligns items vertically */
 }
 
+/* Arc image styling */
 #arc {
-    max-width: 70%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 20px 20px rgb(216, 31, 31);
+    max-width: 70%; /* Limits width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Rounds corners */
+    box-shadow: 20px 20px rgb(216, 31, 31); /* Adds shadow */
 }
 
+/* Teaching description styling */
 #description_teaching {
-    max-width: 50%; /* Restrict text width to 50% of the container */
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    padding-left: 2%;
-    text-align: center;
+    max-width: 50%; /* Limits width */
+    font-size: 1.5rem; /* Sets font size */
+    margin-bottom: 10px; /* Adds space below */
+    padding-left: 2%; /* Adds padding */
+    text-align: center; /* Centers text */
 }
 
+/* Floating effect for elements */
 .floating {
-    animation: float 3s ease-in-out infinite;
-    transition: transform 0.3s ease;
-
+    animation: float 3s ease-in-out infinite; /* Repeats float animation */
+    transition: transform 0.3s ease; /* Smooth scaling transition */
 }
 
+/* Keyframes for float animation */
 @keyframes float {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.05);
-    }
-
-    100% {
-        transform: scale(1);
-    }
+    0% { transform: scale(1); } /* Normal size */
+    50% { transform: scale(1.05); } /* Enlarged size */
+    100% { transform: scale(1); } /* Returns to normal */
 }
 
+/* Scroll-to-top button */
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    opacity: 1;
-    color: whitesmoke; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-    font-family: 'Tinos';    
-    transition: transform 0.3s ease;
-    background-color: rgb(216, 31, 31);
-    
-  }
-  
-  #myBtn:hover {
-    background-color: rgb(92, 2, 2); /* Add a dark-grey background on hover */
-    transform: scale(1.2); /* Scale up on hover */ 
+    display: none; /* Hidden initially */
+    position: fixed; /* Fixed position on screen */
+    bottom: 20px; /* Distance from bottom */
+    right: 30px; /* Distance from right */
+    z-index: 99; /* High priority on screen */
+    border: none; /* No border */
+    outline: none; /* Removes outline */
+    opacity: 1; /* Fully visible */
+    color: whitesmoke; /* Light text color */
+    cursor: pointer; /* Pointer cursor */
+    padding: 15px; /* Adds padding */
+    border-radius: 10px; /* Rounds corners */
+    font-size: 18px; /* Sets font size */
+    font-family: 'Tinos'; /* Matches site font */
+    transition: transform 0.3s ease; /* Smooth scaling transition */
+    background-color: rgb(216, 31, 31); /* Red background */
+}
 
-  }
+/* Hover effect for scroll button */
+#myBtn:hover {
+    background-color: rgb(92, 2, 2); /* Darker red background */
+    transform: scale(1.2); /* Enlarges button */
+}
 
-  .elemental {
-    transition: 0.3s ease;
-  }
-  .elemental:hover {
-    transform: scale(1.05);
-  }
+/* Smooth scaling for hoverable elements */
+.elemental {
+    transition: 0.3s ease; /* Smooth scaling transition */
+}
 
-/* responsiveness, adjusting to phone screens */
+/* Hover effect for scaling */
+.elemental:hover {
+    transform: scale(1.05); /* Enlarges slightly */
+}
 
+/* Responsive styling for smaller screens */
 @media (max-width: 768px) {
     .about-container {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
-        text-align: center; /* Center text for better alignment */
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center; /* Centers items horizontally */
+        text-align: center; /* Centers text */
     }
 
     #headshot {
-        max-width: 150px; /* Adjust image size for smaller screens */
-        margin-bottom: 15px; /* Add spacing below the image */
+        max-width: 150px; /* Reduces image size */
+        margin-bottom: 15px; /* Adds space below */
     }
 
     #description {
-        text-align: center; /* Center-align text */
-        font-size: 1rem;
-        padding-top: 5%;
-        max-width: 90%;
+        text-align: center; /* Centers text */
+        font-size: 1rem; /* Reduces font size */
+        padding-top: 5%; /* Adds padding */
+        max-width: 90%; /* Limits width */
     }
 
     .typingeffect {
-        font-size: 1rem; /* Reduce font size for small screens */
-
+        font-size: 1rem; /* Reduces font size */
     }
 
     .project-container {
-        flex-direction: column; /* Stack projects vertically */
-        align-items: center; /* Center items */
+        flex-direction: column; /* Stacks projects vertically */
+        align-items: center; /* Centers projects */
     }
 
     .project {
         flex: 1 1 100%; /* Each project takes full width */
-        max-width: 90%; /* Optional: Add padding around the projects */
+        max-width: 90%; /* Adds padding */
     }
 
     .project img {
-        max-width: 100%; /* Ensure images resize properly */
-        height: auto;
+        max-width: 100%; /* Ensures images resize */
+        height: auto; /* Maintains aspect ratio */
     }
 
     #button1 {
-        font-size: 0.5rem;
+        font-size: 0.5rem; /* Reduces button font size */
     }
 
     #myBtn {
-        font-size: 0.5rem;
+        font-size: 0.5rem; /* Reduces scroll button font size */
     }
 
     #skills p {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /* Reduces paragraph font size */
     }
 
     #skills h3 {
-        font-size: 1rem;
+        font-size: 1rem; /* Reduces heading font size */
     }
 }
